@@ -3,9 +3,8 @@ import Navbar from './Navbar';
 
 const Home = () => {
     return (
-        <div>
+        <div className='min-h-screen mx-6'> 
             <h2>Welcome to react world!</h2>
-            {/* <Navbar/> */}
         </div>
     );
 };

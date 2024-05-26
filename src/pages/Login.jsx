@@ -11,7 +11,8 @@ const Login = () => {
 
     
     return (
-        <div className="mx-auto mt-10 mb-12 h-full card w-96 bg-base-100 shadow-xl">
+        <div className="min-h-screen">
+            <div className="mx-auto mt-10 mb-12  card w-96 bg-base-100 shadow-xl">
             <h2 className='pt-2 mx-auto'>Login your account</h2>
             <div className="card-body items-center text-center">
                 <form action="" onSubmit={handleLogin}>
@@ -27,7 +28,7 @@ const Login = () => {
                 </form>
                 <GoogleLogin/>
             </div>
-           
+        </div>
         </div>
     );
 };

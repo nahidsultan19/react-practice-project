@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div>
             <h2>Welcome to react world!</h2>
-            <Navbar/>
+            {/* <Navbar/> */}
         </div>
     );
 };

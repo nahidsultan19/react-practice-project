@@ -15,7 +15,7 @@ export const router = createBrowserRouter([
             {
                 path: '/',
                 element:<Home/>,
-                loader:()=>fetch('https://react-practice-pro-backend.vercel.app/products')
+                loader:()=>fetch('http://localhost:5000/products')
             },
             {
                 path: '/about',

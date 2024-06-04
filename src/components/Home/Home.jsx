@@ -1,5 +1,3 @@
-import React from 'react';
-import Navbar from './Navbar';
 import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {

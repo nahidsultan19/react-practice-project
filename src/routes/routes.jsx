@@ -1,10 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../components/Home/Home";
 import Main from "../layout/Main";
-import Login from "../pages/Login";
+import Login from "../authentication/Login";
 import About from "../pages/About";
 import DashboardLayout from "../layout/DashboardLayout";
 import Dashboard from "../components/Dashboard/Dashboard";
+import Register from "../authentication/Register";
 
 export const router = createBrowserRouter([
     {
@@ -13,11 +14,16 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element:<Home/>
+                element:<Home/>,
+                loader:()=>fetch('https://react-practice-pro-backend.vercel.app/products')
             },
             {
                 path: '/about',
                 element:<About/>
+            },
+            {
+                path: '/register',
+                element:<Register/>
             },
             {
                 path: '/login',

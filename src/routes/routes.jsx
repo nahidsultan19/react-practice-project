@@ -6,6 +6,7 @@ import About from "../pages/About";
 import DashboardLayout from "../layout/DashboardLayout";
 import Dashboard from "../components/Dashboard/Dashboard";
 import Register from "../authentication/Register";
+import Services from "../pages/Services";
 
 export const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
             {
                 path: '/about',
                 element:<About/>
+            },
+            {
+                path: '/services',
+                element:<Services/>
             },
             {
                 path: '/register',

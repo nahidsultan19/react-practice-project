@@ -1,4 +1,6 @@
 import { useLoaderData } from 'react-router-dom';
+import About from '../../pages/About';
+import Services from '../../pages/Services';
 
 const Home = () => {
 
@@ -10,6 +12,9 @@ const Home = () => {
             {
                 products.map((product)=><p>{product.name} | {product.brand} | {product.price}</p>)
             }
+
+            <About/>
+            <Services/>
         </div>
     );
 };

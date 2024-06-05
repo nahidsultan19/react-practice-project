@@ -7,6 +7,7 @@ import DashboardLayout from "../layout/DashboardLayout";
 import Dashboard from "../components/Dashboard/Dashboard";
 import Register from "../authentication/Register";
 import Services from "../pages/Services";
+import Project from "../pages/Project";
 
 export const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
             {
                 path: '/services',
                 element:<Services/>
+            },
+            {
+                path: '/projects',
+                element:<Project/>
             },
             {
                 path: '/register',
